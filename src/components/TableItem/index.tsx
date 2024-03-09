@@ -1,7 +1,7 @@
-import * as C from './styles';
-import { Item } from '../../types/Item';
-import { formatDate } from '../../helpers/dateFilter';
-import { categories } from '../../data/categories';
+import * as C from "./styles"
+import { Item } from "../../types/Item"
+import { formatDate } from "../../helpers/dateFilter"
+import { categories } from "../../data/categories"
 
 type Props = {
     item: Item
@@ -23,5 +23,5 @@ export const TableItem = ({ item }: Props) => {
                 </C.Value>
             </C.TableColumn>
         </C.TableLine>
-    );
+    )
 }

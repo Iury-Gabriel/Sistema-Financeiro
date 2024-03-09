@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #FFF;
-    box-shadow: 0px 0px 5px #CCC;
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
     border-radius: 10px;
     padding: 20px;
     margin-top: -40px;
@@ -28,7 +28,9 @@ export const MonthTitle = styled.div`
     text-align: center;
 `;
 
+
 export const ResumeArea = styled.div`
     flex: 2;
     display: flex;
 `;
+
