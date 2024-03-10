@@ -15,16 +15,6 @@ function App() {
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
   const [income, setIncome] = useState(0);
   const [expense, setExpense] = useState(0);
-  
-  useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem('items') || '[]');
-    setList(storedItems);
-  }, []);
-
-
-  useEffect(() => {
-    localStorage.setItem('items', JSON.stringify(list));
-  }, [list]);
 
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth));
